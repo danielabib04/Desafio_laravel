@@ -27,6 +27,12 @@
                       <a href="{{route('owners.index')}}" class="btn btn-primary">Gerenciar</a>
                     </div>
                 </div>
+                <div class="card text-center" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Relatório Geral</h5>
+                      <a href="{{route('print.generate')}}" class="btn btn-primary">Imprimir Relatório</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

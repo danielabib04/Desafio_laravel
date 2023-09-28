@@ -38,7 +38,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('/employees', EmployeeController::class)->middleware('isAdmin')->except('show');
     Route::get('/emails', [EmailController::class, 'create'])->name('mails.create');
     Route::post('/emails', [EmailController::class, 'store'])->name('mails.store');
-    Route::get('/print',    [PdfController::class, 'print']);
+    Route::get('/print',    [PdfController::class, 'print'])->name('print.generate');
 });
 
 
